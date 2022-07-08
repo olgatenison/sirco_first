@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  line-height: 1;
+  font-family: Montserrat;
+  color: #161616;
+  background-color: #efefef;
+}
+a {
+  text-decoration: none;
+}
+/*--------------------------------------*/
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* ------------------------------------------- */
+.title {
+  font-family: Montserrat;
+  color: #171259;
+  text-align: left;
+  font-size: 24px;
+  line-height: 1.2;
+}
+/* ------------------------------------------- */
+.main {
+  background-image: url(../img/bg_bandera.png);
+  padding-top: 130px;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: calc(50%);
+}
+.maine__tile {
+  margin-bottom: 60px;
+}
+
+[class*="__container"] {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+.main__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 991.98px) {
+  .main__container {
+    flex-direction: column;
+  }
+  .main__decor {
+    margin-bottom: 40px;
+  }
+}
+
+.main__content {
+  max-width: 460px;
+}
+.main__decor {
+  margin-right: 40px;
+}
+.main__text {
+  font-size: 14pt;
+  line-height: 1.5;
+}
+.main__text span {
+  font-weight: 600;
+}
